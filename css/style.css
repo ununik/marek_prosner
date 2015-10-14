@@ -133,6 +133,9 @@ h1{
 #navigation li{
     display: block;
 }
+#navigation li a{
+    color:black;
+}
 #kontakt td{
     height: 25px;
 }
