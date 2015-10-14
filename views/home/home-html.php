@@ -25,7 +25,7 @@ $container .= "</td></tr>";
 $container .= "<tr><td>";
 $container .= "<h2 class='h2_left'><a href='index.php?page=o_mne'>O mně</a></h2>";
 $container .= "</td><td class='td_content_right'>";
-$container .= "<a href='index.php?page=o_mne'>$test</a>";
+$container .= "<a href='index.php?page=o_mne'>{$o_mne['text']}</a>";
 $container .= "</td></tr>";
 
 /**

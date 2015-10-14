@@ -2,7 +2,7 @@
 $container = "";
 for($i = 0; $i < 3; $i++){
     $container .= "<div id='clanek_$i'>";
-    $container .= "<h2>{$clanek[$i]['title']}</h2>";
+    $container .= "<h2>{$clanek[$i]['nadpis']}</h2>";
     $container .= "<div>{$clanek[$i]['text']}</div>";
     $container .= '</div>';
 }

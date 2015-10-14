@@ -16,6 +16,6 @@ $container .= "<tr><td>Nahrávky</td>
 
 $container .= "<tr><td>Administrace</td>
                 <td>Odkazy</td>
-                <td>Autor</td></tr>";
+                <td><a href='http://ununik.wz.cz/' target='_blank'>Autor</a></td></tr>";
 
 return $container;
