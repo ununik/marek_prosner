@@ -16,9 +16,17 @@ for($i=0; $i<$firstday_num; $i++){
 $konec_radku = $firstday_num+1;
 for($i = 1; $i <= $pocetDniVMesici; $i++){
     if($konec_radku != 7){
-        $container .= "<td title='{$kalendar[$i]['title']}' onclick='kalendarTtile(this)'>$i</td>";
+        $container .= "<td title='";
+        foreach ($kalendar[$i]['title'] as $title){
+            $container .= "<p>$title</p>";
+        }
+        $container .= "' onclick='kalendarTtile(this)'>$i</td>";
     }else{
-        $container .= "<td  title='{$kalendar[$i]['title']}' onclick='kalendarTtile(this)'>$i</td></tr><tr>";
+        $container .= "'<td  title='";
+        foreach ($kalendar[$i]['title'] as $title){
+            $container .= "<p>$title</p>";
+        }
+        $container .= "' onclick='kalendarTtile(this)'>$i</td></tr><tr>";
         $konec_radku = 0;
     }
     $konec_radku++;

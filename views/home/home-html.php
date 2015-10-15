@@ -1,5 +1,5 @@
 <?php
-$container = "<div id='header'><h1>Marek Prosner</h1></div>";
+$container = "<div id='header'><h1>{$titulek['nadpis']}</h1>{$titulek['popis']}</div>";
 $container .= "<table id='home_table'>";
 /**
  * radek 1
@@ -23,9 +23,9 @@ $container .= "</td></tr>";
  * radek 3
  */
 $container .= "<tr><td>";
-$container .= "<h2 class='h2_left'><a href='index.php?page=o_mne'>O mně</a></h2>";
+$container .= "<h2 class='h2_left'><a href='index.php?page=o_mne'>O nás</a></h2>";
 $container .= "</td><td class='td_content_right'>";
-$container .= "<a href='index.php?page=o_mne'>{$o_mne['text']}</a>";
+$container .= "<a href='index.php?page=o_nas'>{$o_nas['text']}</a>";
 $container .= "</td></tr>";
 
 /**

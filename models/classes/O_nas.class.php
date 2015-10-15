@@ -6,9 +6,9 @@
  * Date: 14.10.15
  * Time: 16:25
  */
-class O_mne extends Connection
+class O_nas extends Connection
 {
-    public function getOMne(){
+    public function getONas(){
         $db = parent::connect();
         $result = $db->prepare("SELECT * FROM `o_mne` limit 1");
         $result->execute(array());

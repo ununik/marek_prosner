@@ -1,5 +1,5 @@
 <?php
-
+error_reporting(E_ALL);
 function __autoload($name){
     include_once('models/classes/' . $name . '.class.php');
 }
@@ -14,3 +14,5 @@ $navigation = include_once('views/navigation.php');
 $content = include_once("controllers/$getPage.php");
 
 print include_once('views/page.php');
+
+var_dump($kalendarDB);
